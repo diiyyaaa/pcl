@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocTech</title>
+
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            line-height: 150%;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #e9e9e9;
+        }
+        
+        .header h1 {
+            color: #32a7c4;
+            font-size: 30px;
+            font-family: "Pacifico", cursive;
+        }
+        
+        .header .social a {
+            padding: 0 5px;
+            color: #222222;
+        }
+        
+        .left {
+            float: left;
+            width: 180px;
+            margin: 0;
+            padding: 1em;
+        }
+        
+        .content {
+            margin-left: 190px;
+            border-left: 1px solid #d4d4d4;
+            padding: 1em;
+            overflow: hidden;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        li a.active {
+            background-color: #d47aa1;
+            color: white;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #1c552a;
+            color: white;
+        }
+        
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 30px 0;
+        }
+        
+        td,
+        th {
+            border: 1px solid #bfbdbd;
+            padding: 8px;
+        }
+        
+        tr:nth-child(1) {
+            background-color: #d47aa1;
+            color: white;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, sans-serif;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active {
+            background-color: #717171;
+        }
+        
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+        
+        tr td i.fas {
+            display: block;
+            font-size: 35px;
+            text-align: center;
+        }
+        
+        .footer {
+            padding: 55px 20px;
+            background-color: #000000;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>DocTech</h1>
+
+        </header>
+        <aside class="left">
+            <img src="C:\Users\NEKO\OneDrive\Documents\Pcl\cartoon-doctors-nurses_52683-59918.webp" width="160px" />
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="file:///C:/Users/NEKO/OneDrive/Documents/Pcl/log.html">Login or Register</a></li>
+                <li><a href="file:///C:/Users/NEKO/OneDrive/Documents/Pcl/contact.html">Contact Us</a></li>
+            </ul>
+            <br><br>
+            <p>"Stay safe. Stay healthy"<br>- Mr Doctech</p>
+        </aside>
+        <main class="content">
+            <h2>About DocTech</h2>
+            <p> The system concentrates on the options that the user choose. The goal is to discover any early warning signs or problems that the user may be having. After Doctech has gathered enough keywords from the initial messages, it begins asking the
+                user questions and attempting to narrow down a few ailments that the user may be experiencing. After the Doctech has narrowed down the probable conditions that the user could be suffering from, it now assigns a ranking to those disorders.
+                When the list of possible diseases, the Doctech starts interrogating the user about how the user is feeling. Once it has gathered enough information, it determines the most likely disease that the user is suffering from.
+            </p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+
+                <tr>
+                    <td>Check your health</td>
+                    <td>Visit nearby clinic</td>
+                    <td>Stay Healthy</td>
+                </tr>
+                </tr>
+                <tr>
+            </table>
+
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="C:\Users\NEKO\OneDrive\Documents\Pcl\5-Benefits-of-Digital-Health-Systems.png" style="width:100%">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="C:\Users\NEKO\OneDrive\Documents\Pcl\DIGITAL-Health-graphic.jpg" style="width:100%">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="C:\Users\NEKO\OneDrive\Documents\Pcl\GettyImages-1137422797.webp" style="width:100%">
+
+                </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
+            <form>
+                <h1> Benefits of staying fit and healthy </h1>
+                <img align="right" src="C:\Users\NEKO\OneDrive\Documents\Pcl\giphy.gif" style="width:100px;height:100px;">
+                <p>Staying healthy can have a positive effect on almost every aspect of our lives. Staying fit can be achieved in a variety of ways, like eating healthy meals along with plenty of fruits and vegetables. Spending a little time each day exercising
+                    can help us become healthy and avoid the modern blight of obesity. What is important is that you continue exercising. We should give at least twenty to thirty minutes a day to exercise at least three to five times a week. One should
+                    have a routine; as well ensure enough physical activity each day. For those determined to get the most out of their body in terms of longevity, there is a whole host of evidence that links staying healthy with longer life. One study
+                    went so far as to estimate the link between only drinking alcohol in moderation, not smoking, exercising regularly, and eating a healthy diet can extend your life by up to 14 years. One of the main benefits of staying fit and healthy
+                    is that living a healthy lifestyle can make you feel more confident than ever before. Exercising can release hormones to your brain that enhance your mood and provide you with a sense of euphoria. The modern world we live in is undoubtedly
+                    stressful, with the ability to switch off from work being a significant problem. One of the issues we face is how to handle stress with exercise. Those who live a healthy lifestyle have been proven in clinical studies to have lower
+                    levels of stress and anxiety. Also, no matter what kind of addiction you are affected by, a healthy lifestyle filled with exercise can limit your desire for the addictive substance. Whether your vice of choice is food, drugs, or alcohol,
+                    you will find a runner’s high just as addictive. Even one’s eyesight can be protected by a healthy diet and a proper diet. Better vision as we age can be obtained with regular cardiovascular exercise. When you exercise regularly, you
+                    will usually find you look and feel better, leading to a rise in your confidence. Higher self-esteem can lead to a more satisfying life. Physical fitness is not the sole basis of being healthy; being healthy means being mentally and
+                    emotionally fit as well. Being healthy should be part of our overall lifestyle. Living a healthy lifestyle can help prevent chronic diseases and long-term illnesses. Feeling good about oneself and taking care of one’s health are important
+                    for one’s self-esteem and self-image. Maintain a healthy lifestyle by doing what is right for your body. In order to have a sound mental and emotional state, you must surround yourself with positive energy. Yes, not all problems can
+                    be avoided. But it helps to face such obstacles with an optimist outlook. Surround yourself with encouraging friends and people that will provide you with constructive criticism every once in a while to help you improve. Maintaining
+                    a healthy lifestyle is not that difficult, nor does it require a lot of work. Make it a habit to always look at the brighter side of life. Even if you find yourself in the worst situation, there is always an upside to it — something
+                    good and positive. Dwell on these things instead.</p>
+            </form>
+        </main>
+        <footer class="footer"><i class="fas fa-ambulance"></i> </footer>
+    </div>
+</body>
+
+</html>
