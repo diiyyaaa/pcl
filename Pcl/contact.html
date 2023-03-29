@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- <title> Responsive Contact Us Form  | CodingLab </title>-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.ss">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,21 +19,39 @@
             box-sizing: border-box;
             font-family: "Poppins", sans-serif;
         }
-        
         body {
             min-height: 100vh;
-            width: 100%;
-            background: #c8e8e9;
+            margin: 0;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction:column;
+            box-sizing: border-box;
         }
+         .footer {
+            margin-top: auto;
+            padding: 55px 20px;
+            background-color: #000000;
+            color: white;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #e9e9e9;
+        }
+        .a1{
+            font-family:cursive;
+            color: #32a7c4;
+            text-decoration: none;
+        }
+    
         
         .container {
-            width: 85%;
+            width: 100%;
             background: #fff;
-            border-radius: 6px;
-            padding: 20px 60px 30px 40px;
+            
+           
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
         
@@ -64,7 +82,9 @@
             transform: translateY(-50%);
             background: #afafb6;
         }
-        
+        .content{
+            height: 100vh;
+        }
         .content .left-side .details {
             margin: 14px;
             text-align: center;
@@ -185,6 +205,10 @@
 
 <body>
     <div class="container">
+        <header class="header">
+            <h1><a class="a1" href="Homepage.html">DocTech</a></h1>
+    </div>
+    <div class="container">
         <div class="content">
             <div class="left-side">
                 <div class="address details">
@@ -226,6 +250,7 @@
             </div>
         </div>
     </div>
+    <footer class="footer"><i class="fas fa-ambulance"></i> </footer>
 </body>
 
 </html>
